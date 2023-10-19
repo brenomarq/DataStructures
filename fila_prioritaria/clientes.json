@@ -1,0 +1,52 @@
+[
+    {
+        "nome": "Luíz Araújo da Silva",
+        "idade": 55,
+        "prioritario": true
+    },
+    {
+        "nome": "Luana Martins",
+        "idade": 19,
+        "prioritario": false
+    },
+    {
+        "nome": "Vitor Ribeiro de Souza",
+        "idade": 35,
+        "prioritario": true
+    },
+    {
+        "nome": "Maria do Sofrimento Lima",
+        "idade": 78,
+        "prioritario": false
+    },
+    {
+        "nome": "José Martins Pinto",
+        "idade": 90,
+        "prioritario": false
+    },
+    {
+        "nome": "Amanda Soares Cavalcante",
+        "idade": 69,
+        "prioritario": false
+    },
+    {
+        "nome": "João Luíz",
+        "idade": 71,
+        "prioritario": false
+    },
+    {
+        "nome": "Maria do Livramento",
+        "idade": 45,
+        "prioritario": true
+    },
+    {
+        "nome": "Yuri Silva",
+        "idade": 25,
+        "prioritario": true
+    },
+    {
+        "nome": "Reinaldo Azevedo",
+        "idade": 31,
+        "prioritario": false
+    }
+]
