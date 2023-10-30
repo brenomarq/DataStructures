@@ -1,3 +1,4 @@
+# Deque e lista - Questão 2
 class Node:
     def __init__(self,initdata):
         self.data = initdata
