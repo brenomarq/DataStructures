@@ -1,15 +1,25 @@
 class Vertex:
-    def __init__(self, key):
-        self.__key = key
-        self.__connect_to = {}
+    def __init__(self, id):
+        self.__id = id
+        self.__connects = {}
 
-    def add_neighbor(self, nbr, weight=0):
-        self.__connect_to[nbr] = weight
+    def addNeighbor(self, nbr, weight=0):
+        self.__connects[nbr] = weight
 
-    def del_neighbor(self, nbr):
-        ...
+    def deleteNeighbor(self, nbr):
+        if nbr in self.__connects:
+            self.__connects.pop(nbr)
+
+    def getConnections(self):
+        return self.__connects.keys
+
+    def get_id(self):
+        return self.__id
+
+    def get_weight(self, nbr):
+        return self.__connects.get(nbr)
 
 
 class Graph:
     def __init__(self):
-        self.__vert_list = {}
+        self.__list = {}

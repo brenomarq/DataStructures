@@ -1,5 +1,5 @@
 # Lista encadeada
-class Lista():
+class LinkedList():
     def __init__(self, elem, prox=None):
         self.elem = elem
         self.prox = prox
@@ -7,7 +7,7 @@ class Lista():
 
 def adiciona(lista, elem):
     if lista.prox == None:
-        lista.prox = Lista(elem)
+        lista.prox = LinkedList(elem)
     else:
         adiciona(lista.prox, elem)
 
@@ -19,6 +19,6 @@ def retira(lista, elem):
     retira(lista.prox, elem)
 
 
-lista = Lista(1)
+lista = LinkedList(1)
 adiciona(lista, 2)
 adiciona(lista, 3)
