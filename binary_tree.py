@@ -54,6 +54,18 @@ class BinaryTree:
                 else:
                     self.add(item, root.right)
 
+    def remove(self, item, root="No value"):  # I'll try to implement later, when I've got more time
+        if root == "No value":
+            self.remove(item, self.__root)
+        elif root == None:
+            return None
+        elif root.left and root.right:
+            ...
+        elif root.left or root.right:
+            ...
+        else:
+            ...
+
     def pre_order(self, root="No value"):
         if root == "No value":
             self.pre_order(self.__root)

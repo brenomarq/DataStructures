@@ -42,8 +42,12 @@ class Graph:
     def add_vertex(self, key):
         self.__elements[key] = Vertex(key)
 
-    def delete_vertex(self):
-        ...
+    def delete_vertex(self, key):  # Need better implementation
+        for element in self.__elements.values():
+            element.delete_neighbor(key)
+
+        if key in self.__elements:
+            self.__elements.pop(key)
 
     def get_vertex(self, key):
         if key in self.__elements:
@@ -65,4 +69,5 @@ graph.add_vertex("v3")
 
 graph.add_edge("v1", "v3", 5)
 graph.add_edge("v3", "v4", 8)
+graph.delete_vertex("v4")
 print("Done")
